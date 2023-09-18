@@ -20,13 +20,30 @@ function page() {
                     find the insights on the website
                 </p>
             </a>
-            <Link href="/api/python"
+            <Link href="/api/index"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
                     <code className="font-mono font-bold">api/index.py</code>
                 </Link>
+            <br />
+            <br />
+
+            <Link href="/api/welcome"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+                    <code className="font-mono font-bold">api/welcome page using flask python routes</code>
+                </Link>
+            <br />
+            <br />
+
+            1
+            <h1>Adding file upload functionality</h1>
+            <form action="" method='post' encType='multipart/form-data'>
+                <input type="file" name='file' accept='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel'/>
+                <input type="submit" value='Upload' />
+
+            </form>
         </div>
 
-        
+
     )
 }
 
