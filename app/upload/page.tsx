@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 function page() {
     return (
         <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
@@ -9,6 +9,7 @@ function page() {
                 target="_blank"
                 rel="noopener noreferrer"
             >
+
                 <h2 className={`mb-3 text-2xl font-semibold`}>
                     Upload{' '}
                     <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -19,7 +20,13 @@ function page() {
                     find the insights on the website
                 </p>
             </a>
+            <Link href="/api/python"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+                    <code className="font-mono font-bold">api/index.py</code>
+                </Link>
         </div>
+
+        
     )
 }
 
